@@ -1,2 +1,23 @@
-# AI_Customer_Feedback_Analysis_System
-An intelligent customer feedback analysis project using AI, NLP, and Streamlit.
+Intelligent Customer Feedback Analysis System
+This repo contains a ready-to-run scaffold for the assignment: Intelligent Customer Feedback Analysis System using AI. Files included:
+
+data/simulated_feedback.csv (1200 rows)
+make_dataset.py (dataset generator)
+data_preprocessing.py
+train_sentiment_model.py
+summarization.py
+insights.py
+app_streamlit.py
+requirements.txt
+examples/long_feedback.txt
+AI_insights_report.pdf (generated sample report)
+Run steps (local):
+
+Create virtual env and install dependencies: python -m venv venv source venv/bin/activate # Windows: venv\Scripts\activate pip install -r requirements.txt
+(Optional) Regenerate sample data: python make_dataset.py
+Preprocess data: python data_preprocessing.py --input data/simulated_feedback.csv --output data/cleaned_feedback.csv
+Train model: python train_sentiment_model.py --input data/cleaned_feedback.csv --model_out models/distilbert_sentiment
+Run summarization examples: python summarization.py --text ""
+Generate insights (sample PDF included): python insights.py --input data/cleaned_feedback.csv --output AI_insights_report.pdf
+Run Streamlit demo: streamlit run app_streamlit.py
+Personalize the code/comments before submission to reflect your own work.
