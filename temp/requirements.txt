@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+nltk
+spacy
+transformers
+torch
+gensim
+sentence-transformers
+streamlit
+matplotlib
+statsmodels
+reportlab
+faker
+pmdarima
